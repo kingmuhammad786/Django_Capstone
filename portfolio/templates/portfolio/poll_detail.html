@@ -1,0 +1,41 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Poll Details{% endblock %}
+
+{% block content %}
+<h2>{{ poll.question }}</h2>
+
+{% if user.is_authenticated %}
+    {% if user_has_voted %}
+        <p>You have already voted in this poll.</p>
+    {% else %}
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <form method="POST" action="{% url 'vote' poll_id=poll.id %}">
+            {% csrf_token %}
+            {% for choice in poll.choices.all %}
+                <div>
+                    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+                </div>
+            {% endfor %}
+            <button type="submit">Vote</button>
+        </form>
+    {% endif %}
+{% else %}
+    <p>You must be <a href="{% url 'login' %}">logged in</a> to vote.</p>
+{% endif %}
+
+<h3>Results:</h3>
+<ul>
+    {% for choice in poll.choices.all %}
+        <li>{{ choice.choice_text }} - {{ choice.votes }} votes</li>
+    {% empty %}
+        <li>No choices available for this poll.</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'poll_list' %}">Back to Polls</a>
+{% endblock %}
+

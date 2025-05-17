@@ -1,0 +1,35 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Project Details - {{ project.title }}{% endblock %}
+
+{% block content %}
+<section class="project-detail-container">
+    <h2>{{ project.title }}</h2>
+
+    {% if project.image1 %}
+        <img src="{{ project.image1.url }}" alt="Image 1" class="project-image">
+    {% else %}
+        <p>Image 1 Not Available</p>
+    {% endif %}
+
+    {% if project.image2 %}
+        <img src="{{ project.image2.url }}" alt="Image 2" class="project-image">
+    {% else %}
+        <p>Image 2 Not Available</p>
+    {% endif %}
+
+    {% if project.image3 %}
+        <img src="{{ project.image3.url }}" alt="Image 3" class="project-image">
+    {% else %}
+        <p>Image 3 Not Available</p>
+    {% endif %}
+
+    <p>{{ project.description }}</p>
+
+    <a href="{% url 'project_list' %}" class="btn-back">← Back to Projects</a>
+</section>
+{% endblock %}
+
+
+

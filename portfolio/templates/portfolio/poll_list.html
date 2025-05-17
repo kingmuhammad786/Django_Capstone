@@ -1,0 +1,22 @@
+{% extends "portfolio/base.html" %}
+
+{% block title %}Polls{% endblock %}
+
+{% block content %}
+<h2>Polls</h2>
+
+{% if polls %}
+    <ul>
+        {% for poll in polls %}
+            <li>
+                <a href="{% url 'poll_detail' poll_id=poll.id %}">
+                    {{ poll.question }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls available.</p>
+{% endif %}
+{% endblock %}
+

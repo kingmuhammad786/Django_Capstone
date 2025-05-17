@@ -1,0 +1,12 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="home-container">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Showcasing my projects and work.</p>
+    <a href="{% url 'project_list' %}" class="cta-button">View Projects</a>
+</section>
+{% endblock %}
+
