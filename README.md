@@ -9,7 +9,7 @@ This is a portfolio project built with Django, allowing users to showcase projec
 1️⃣ Clone the repository:
 
 
-git clone <your-repo-link>
+git clone <https://github.com/kingmuhammad786/Django_Capstonek>
 cd Django_Capstone
 2️⃣ Create & activate a virtual environment:
 
