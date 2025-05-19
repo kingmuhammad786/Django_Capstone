@@ -18,3 +18,8 @@ Thumbs.db
 .vscode/
 *.swp
 *~
+docs/_build/
+make.bat
+Makefile
+.env
+*.env
