@@ -1,25 +1,55 @@
+# Compiled Python files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual environment folders
 .venv/
 venv/
 env/
 ENV/
 myvenv/
+
+# Logs and debug files
 *.log
-*.pot
+debug.log
+
+# Database files
+*.db
 *.sqlite3
 *.sqla
-/media
-/static
+
+# Static and media files (can be regenerated)
+/media/
+/static/
+
+# System-specific files
 .DS_Store
 Thumbs.db
+
+# IDE and editor files
 .vscode/
+.idea/
 *.swp
 *~
+
+# Temporary and cache files
+*.cache
+*.tmp
+*.bak
+
+# Generated documentation (Sphinx)
 docs/_build/
+
+# Build and command files (for generated output)
 make.bat
 Makefile
+
+# Environment and secrets
 .env
 *.env
+
+# Excluding migrations to prevent unnecessary tracking
+migrations/
+
