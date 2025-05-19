@@ -25,8 +25,12 @@ SECRET_KEY = "your-secure-secret-key"
 # Debug mode. Set to `False` in production to disable detailed error pages.
 DEBUG = True
 
-# Allowed hosts for this Django application.  Required for security reasons in deployment.
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+# Allowed hosts for this Django application. Required for security reasons in deployment.
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "ip172-18-0-8-d0l9hji91nsg0084ad00-8000.direct.labs.play-with-docker.com"
+]
 
 # List of installed Django applications. These provide various functionalities to the project.
 INSTALLED_APPS = [
@@ -103,4 +107,4 @@ LOGIN_URL = "/login/"  # URL for the login page
 LOGIN_REDIRECT_URL = "/"  # URL to redirect to after successful login
 LOGOUT_REDIRECT_URL = "/"  # URL to redirect to after logout
 
-AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"] #Default Django authentication backend
+AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"] # Default Django authentication backend
