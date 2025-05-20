@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Django_C documentation &#8212; Django_C 1.0 documentation</title>
+    <title>Overview &#8212; Django_C 1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -31,13 +31,53 @@
 
           <div class="body" role="main">
             
-  <section id="django-c-documentation">
-<h1>Django_C documentation<a class="headerlink" href="#django-c-documentation" title="Link to this heading">¶</a></h1>
-<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
-documentation for details.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <p>reStructuredText
+Django_C Documentation
+======================</p>
+<p>Welcome to the official documentation for the <strong>Django Capstone Project</strong>.
+This guide provides details on <strong>setup, features, API usage, and deployment</strong>.</p>
+<section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h1>
+<p>The Django Capstone Project is a web application designed to <strong>showcase portfolio projects</strong> and allow user interaction.
+It is containerized using <strong>Docker</strong> and includes well-documented code using <strong>Sphinx</strong>.</p>
+</section>
+<section id="installation-setup">
+<h1>Installation &amp; Setup<a class="headerlink" href="#installation-setup" title="Link to this heading">¶</a></h1>
+<p>Follow these steps to install and run the application:</p>
+<ol class="arabic simple">
+<li><p><strong>Clone the repository</strong>:
+<a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>bash
+git clone <a class="reference external" href="https://github.com/kingmuhammad786/Django_Capstone">https://github.com/kingmuhammad786/Django_Capstone</a>
+cd Django_Capstone</p></li>
+</ol>
+<p>Activate the virtual environment:</p>
+<p>bash
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venvScriptsactivate     # Windows
+Install dependencies:</p>
+<p>bash
+pip install -r requirements.txt
+Run database migrations:</p>
+<p>bash
+python manage.py migrate
+Start the development server:</p>
+<p>bash
+python manage.py runserver
+Features</p>
+<p>✔ User authentication and profile management ✔ Project showcase with descriptions and images ✔ Interactive polling system ✔ API integration for external services ✔ Responsive design for web &amp; mobile</p>
+<p>API Endpoints</p>
+<p>The application includes several API endpoints for interacting with user data and projects.</p>
+<p>GET /api/projects/ → Returns a list of portfolio projects</p>
+<p>POST /api/projects/ → Adds a new project</p>
+<p>PUT /api/projects/&lt;id&gt;/ → Updates an existing project</p>
+<p>DELETE /api/projects/&lt;id&gt;/ → Removes a project</p>
+<p>Usage Guidelines</p>
+<p>After setting up the project, you can: ✔ Create a new project profile using the dashboard. ✔ Participate in polls and interact with user portfolios. ✔ Manage user authentication through Django’s built-in system.</p>
+<p>Documentation Access</p>
+<p>This project includes pre-generated documentation using Sphinx.</p>
+<p>📌 How to View the Documentation: 1️⃣ Navigate to the docs/_build/html/ folder. 2️⃣ Open the index.html file in your browser.</p>
+<p>installation features api usage documentation</p>
 </section>
 
 
