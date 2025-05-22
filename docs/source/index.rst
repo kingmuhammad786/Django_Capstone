@@ -3,13 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Django_C documentation
+Django_C Documentation
 ======================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Welcome to the official documentation for the Django_C project. This guide provides structured information on installation, usage, and setup to help users get started efficiently.
 
 .. toctree::
    :maxdepth: 2
@@ -17,6 +14,7 @@ documentation for details.
 
    installation
    usage
+
    
 
 
