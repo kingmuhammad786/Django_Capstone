@@ -29,7 +29,7 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # -- Options for HTML Output -------------------------------------------------
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'  # ReadTheDocs Theme (clean & modern)
 html_static_path = ['_static']
 
 # -- Autodoc Settings --------------------------------------------------------
