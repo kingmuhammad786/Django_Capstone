@@ -1,23 +1,31 @@
-.. Django_C documentation master file, created by
-   sphinx-quickstart on Thu May 22 03:30:58 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Django_C Documentation
 ======================
 
-Welcome to the official documentation for the Django_C project. This guide provides structured information on installation, usage, and setup to help users get started efficiently.
+Welcome to the official documentation for **Django_C**, a Django-based application designed to [briefly describe its purpose].
+
+## 📖 About Django_C
+Django_C is a web-based project built using the Django framework. This documentation provides an overview of its installation, usage, and key components.
+
+## 💡 How to Use This Documentation
+This guide covers:
+- How to install and configure Django_C.
+- How to interact with its views and models.
+- Reference documentation for core modules.
+
+For details, explore the sections below:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 📑 Contents:
 
    installation
    usage
-<<<<<<< HEAD
-=======
    reference
->>>>>>> docs
+
+## 🔗 Additional Resources
+For more information on `reStructuredText`, visit:
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+
 
    
 

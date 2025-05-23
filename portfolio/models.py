@@ -30,7 +30,8 @@ class Project(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)  # Set creation timestamp
     updated_at = models.DateTimeField(auto_now=True)  # Auto-update timestamp on save
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Returns a string representation of the project."""
         return f"{self.title} (Added on {self.created_at.strftime('%Y-%m-%d')})"
 
 
@@ -48,7 +49,8 @@ class Poll(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)  # Automatically set timestamp
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Returns a string representation of the poll question."""
         return self.question
 
 
@@ -66,7 +68,8 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=255)
     votes = models.IntegerField(default=0)
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Returns a string representation of the choice."""
         return self.choice_text
 
 
@@ -78,6 +81,10 @@ class Vote(models.Model):
         poll (Poll): The poll being voted on.
         user (User): The user casting the vote.
         choice (Choice): The selected choice by the user.
+
+    Constraints:
+        - Users can only vote **once** per poll.
+        - A vote is tied to a poll and a specific choice.
     """
 
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
@@ -87,8 +94,10 @@ class Vote(models.Model):
     class Meta:
         unique_together = ("poll", "user")  # Restricts multiple votes from the same user
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Returns a string representation of the vote."""
         return f"{self.user.username} voted for '{self.choice}' in poll '{self.poll}'"
+
 
 
 
