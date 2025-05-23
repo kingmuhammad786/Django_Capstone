@@ -14,6 +14,10 @@ Welcome to the official documentation for the Django_C project. This guide provi
 
    installation
    usage
+<<<<<<< HEAD
+=======
+   reference
+>>>>>>> docs
 
    
 
