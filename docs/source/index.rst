@@ -17,6 +17,8 @@ documentation for details.
 
    installation
    usage
+   reference
+
    
 
 
