@@ -18,7 +18,9 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="portfolio.migrations package" href="portfolio.migrations.html" />
+    <link rel="prev" title="portfolio" href="modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,11 +42,57 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">📑 Contents:</span></p>
-<ul>
+              <p class="caption" role="heading"><span class="caption-text">📑 Documentation Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference.html">Code Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">portfolio</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">portfolio package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="portfolio.migrations.html">portfolio.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.admin">portfolio.admin module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.admin.ChoiceAdmin"><code class="docutils literal notranslate"><span class="pre">ChoiceAdmin</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.admin.PollAdmin"><code class="docutils literal notranslate"><span class="pre">PollAdmin</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.admin.ProjectAdmin"><code class="docutils literal notranslate"><span class="pre">ProjectAdmin</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.admin.VoteAdmin"><code class="docutils literal notranslate"><span class="pre">VoteAdmin</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.apps">portfolio.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.apps.PortfolioConfig"><code class="docutils literal notranslate"><span class="pre">PortfolioConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.models">portfolio.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.models.Poll"><code class="docutils literal notranslate"><span class="pre">Poll</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.models.Project"><code class="docutils literal notranslate"><span class="pre">Project</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.models.Vote"><code class="docutils literal notranslate"><span class="pre">Vote</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.tests">portfolio.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.urls">portfolio.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio.views">portfolio.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.CustomLoginView"><code class="docutils literal notranslate"><span class="pre">CustomLoginView</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.about"><code class="docutils literal notranslate"><span class="pre">about()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.contact"><code class="docutils literal notranslate"><span class="pre">contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.logout_view"><code class="docutils literal notranslate"><span class="pre">logout_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.poll_detail"><code class="docutils literal notranslate"><span class="pre">poll_detail()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.poll_list"><code class="docutils literal notranslate"><span class="pre">poll_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.project_detail"><code class="docutils literal notranslate"><span class="pre">project_detail()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.project_list"><code class="docutils literal notranslate"><span class="pre">project_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.register_view"><code class="docutils literal notranslate"><span class="pre">register_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#portfolio.views.vote"><code class="docutils literal notranslate"><span class="pre">vote()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-portfolio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -61,6 +109,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">portfolio</a></li>
       <li class="breadcrumb-item active">portfolio package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/portfolio.rst.txt" rel="nofollow"> View page source</a>
@@ -928,7 +977,10 @@ user credentials securely in the database.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="portfolio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="portfolio.migrations.html" class="btn btn-neutral float-right" title="portfolio.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
