@@ -74,17 +74,17 @@ If using Docker Playground, navigate to port 8000 in your browser.
 This project includes pre-generated documentation using Sphinx.
 
 ✅ How to View the Documentation
-1️⃣ Navigate to the docs/_build/html/ folder. 2️⃣ Open the index.html file in your browser.
+1️⃣ Navigate to the docs/source/ folder. 2️⃣ Open the index.html file in your browser.
 
 Regenerate Documentation (Optional)
 If needed, you can regenerate the documentation manually:
 
-bash
 cd docs
-sphinx-build -b html source _build/html
-Then, open:
+sphinx-build -b html source build/html
 
-docs/_build/html/index.html
+ Then, open:
+ docs/build/index.html
+
 
 📌 Repository Link :
 🔗 https://github.com/kingmuhammad786/Django_Capstone
